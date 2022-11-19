@@ -532,7 +532,7 @@ else ifeq ($(findstring SDL,$(WINDOW_API)),SDL)
   else ifeq ($(OSX_BUILD),1)
     BACKEND_LDFLAGS += -framework OpenGL $(shell pkg-config --libs glew)
   else
-    BACKEND_LDFLAGS += -lGL
+    BACKEND_LDFLAGS += -lGL -lstdc++
   endif
 endif
 
