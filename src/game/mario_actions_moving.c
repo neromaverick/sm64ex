@@ -9,6 +9,7 @@
 #include "area.h"
 #include "interaction.h"
 #include "mario_actions_object.h"
+#include "mario_cheats.h"
 #include "memory.h"
 #include "behavior_data.h"
 #include "thread6.h"
@@ -1866,6 +1867,7 @@ s32 act_long_jump_land(struct MarioState *m) {
         play_sound_if_no_flag(m, SOUND_MARIO_UH2_2, MARIO_MARIO_SOUND_PLAYED);
     }
 
+    cheats_long_jump(m);
     common_landing_action(m,
                           !m->marioObj->oMarioLongJumpIsSlow ? MARIO_ANIM_CROUCH_FROM_FAST_LONGJUMP
                                                              : MARIO_ANIM_CROUCH_FROM_SLOW_LONGJUMP,
