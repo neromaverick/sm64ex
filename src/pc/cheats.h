@@ -13,6 +13,7 @@ struct CheatList {
     bool         ExitAnywhere;
     bool         HugeMario;
     bool         TinyMario;
+    bool         StayInLevel;
     unsigned int Coin;
     bool         Hover;
     bool         Moon;

@@ -107,6 +107,7 @@ static const u8 optsCheatsStr[][64] = {
     { TEXT_OPT_CHEAT7 },
     { TEXT_OPT_CHEAT8 },
     { TEXT_OPT_CHEAT9 },
+    { TEXT_OPT_CHEAT10 },
 };
 
 static const u8 bindStr[][32] = {
@@ -311,6 +312,7 @@ static struct Option optsCheats[] = {
     DEF_OPT_TOGGLE(optsCheatsStr[6], &Cheats.ExitAnywhere),
     DEF_OPT_TOGGLE(optsCheatsStr[7], &Cheats.HugeMario),
     DEF_OPT_TOGGLE(optsCheatsStr[8], &Cheats.TinyMario),
+    DEF_OPT_TOGGLE(optsCheatsStr[9], &Cheats.StayInLevel),
     DEF_OPT_CHOICE(optsCheatsStr2[0], &Cheats.Coin, CoinChoices),
     DEF_OPT_TOGGLE(optsCheatsStr2[1], &Cheats.Hover),
     DEF_OPT_TOGGLE(optsCheatsStr2[2], &Cheats.Moon),
